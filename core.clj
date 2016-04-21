@@ -1,9 +1,7 @@
-(defn parse-args
-  [[_ & [operator & args]]]
-  (list operator args))
+(load-file "./parsers.clj")
 
 (defn main
   []
-  (println (str "Hello, " (parse-args *command-line-args*))))
+  (println (call (parse-args *command-line-args*))))
 
 (main)
