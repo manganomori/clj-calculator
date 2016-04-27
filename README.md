@@ -6,7 +6,7 @@ Simple Clojure calculator written to learn how to code in Clojure lang.
 ## TODO
 
 - [ ] Implement tests
-- [ ] Make use of `namespaces`
+- [x] Make use of `namespaces`
 - [ ] Allow to execute using a bash script instead calling `lein exec..`
 
 ## Setup

@@ -1,4 +1,5 @@
-; Parsers
+(ns clj-calculator.parser)
+
 (defn parse-args
   [[_ & [operator & args]]]
   (list operator args))
@@ -12,9 +13,10 @@
   (format "%.2f" float-number))
 
 (defn call
-  [[operator args]]
+  [unparsed-args]
 
-  (format-float
-    (reduce
+  (let [[operator args] (parse-args unparsed-args)]
+    (format-float
+     (reduce
       (eval (read-string operator))
-      (map parse-float args))))
+      (map parse-float args)))))
