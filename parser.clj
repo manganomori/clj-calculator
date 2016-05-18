@@ -6,7 +6,7 @@
 
 (defn parse-float
   [string]
-  (Float. string))
+  (float (read-string string)))
 
 (defn format-float
   [float-number]

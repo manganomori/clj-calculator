@@ -1,4 +1,4 @@
-(load-file "./parsers.clj")
+(load-file "./parser.clj")
 
 (ns clj-calculator.core)
 
