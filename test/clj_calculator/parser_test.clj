@@ -1,5 +1,3 @@
-(load-file "./parser.clj")
-
 (ns clj-calculator.parser-test
   (:require [clojure.test :refer :all]
             [clj-calculator.parser :as p]))

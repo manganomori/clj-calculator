@@ -20,7 +20,7 @@ lein install
 ## Using
 
 ```
-lein exec core.clj funcname param1 param2 param3 etc
+lein exec -p src/clj_calculator/core.clj funcname param1 param2 param3 etc
 ```
 
 ## Functions
