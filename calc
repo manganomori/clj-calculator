@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+lein exec -p src/clj_calculator/core.clj $*
