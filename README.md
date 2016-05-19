@@ -7,7 +7,7 @@ Simple Clojure calculator written to learn how to code in Clojure lang.
 
 - [x] Implement tests
 - [x] Make use of `namespaces`
-- [ ] Allow to execute using a bash script instead calling `lein exec..`
+- [x] Allow to execute using a bash script instead calling `lein exec..`
 
 ## Setup
 
@@ -20,7 +20,13 @@ lein install
 ## Using
 
 ```
-lein exec -p src/clj_calculator/core.clj funcname param1 param2 param3 etc
+./calc funcname param1 param2 param3 etc
+```
+
+### Example
+
+```
+./calc + 1 2 # => 3
 ```
 
 ## Functions
